@@ -1,0 +1,26 @@
+{
+    "encode_method": "le",
+    "model_type": "vanilla",
+        
+    "kernel_size": 3,
+    "filters": 64,
+    "strides": 1,
+    "momentum": 0.99,
+    "activation": "relu",
+    "keep_prob": 1.0,
+    
+    
+    "num_epochs": 5,
+    "batch_size": 64,
+    "noise_dim": 5,
+    
+    "c_lr": 0.00015, 
+    "d_lr": 0.00015,
+    "g_lr": 0.00015,
+    
+    "keep_prob_train": 0.6,
+    "optimizer": "RMSProp",
+    
+    "tableGAN_params": {"delta_mean": 0.0, "delta_std": 0.0}
+
+}

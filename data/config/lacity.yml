@@ -1,0 +1,38 @@
+{
+    "dataset_name": "lacity",
+    
+    "raw_columns": ['Row ID', 'Year', 'Department Title', 'Payroll Department',
+                   'Record Number', 'Job Class Title', 'Employment Type',
+                   'Hourly or Event Rate', 'Projected Annual Salary', 'Q1 Payments',
+                   'Q2 Payments', 'Q3 Payments', 'Q4 Payments',
+                   'Payments Over Base Pay', '% Over Base Pay', 'Total Payments',
+                   'Base Pay', 'Permanent Bonus Pay', 'Longevity Bonus Pay',
+                   'Temporary Bonus Pay', 'Lump Sum Pay', 'Overtime Pay',
+                   'Other Pay & Adjustments', 'Other Pay (Payroll Explorer)', 'MOU',
+                   'MOU Title', 'FMS Department', 'Job Class', 'Pay Grade',
+                   'Average Health Cost', 'Average Dental Cost', 'Average Basic Life',
+                   'Average Benefit Cost', 'Benefits Plan', 'Job Class Link'],
+    
+    "identifiers": ['Row ID', 'Record Number', 'Job Class Link'],
+    
+    "cleaned_columns": ['Year', 'Payroll Department', 'Hourly or Event Rate',
+                   'Projected Annual Salary', 'Q1 Payments', 'Q2 Payments', 'Q3 Payments',
+                   'Q4 Payments', 'Payments Over Base Pay', 'Total Payments', 'Base Pay',
+                   'Permanent Bonus Pay', 'Longevity Bonus Pay', 'Temporary Bonus Pay',
+                   'Lump Sum Pay', 'Overtime Pay', 'Other Pay & Adjustments',
+                   'Other Pay (Payroll Explorer)', 'FMS Department', 'Job Class',
+                   'Average Health Cost', 'Average Dental Cost', 'Average Basic Life',
+                   'Average Benefit Cost', 'Department Title', '% Over Base Pay',
+                   'MOU Title', 'Pay Grade', 'Benefits Plan', 'Employment Type',
+                   'Job Class Title', 'MOU'],
+    
+    "target_column": 'Projected Annual Salary',
+    "target_variable_type": 'real',
+    "num_real": 23,
+    "num_cat": 8,
+    "number_of_tokens":  {
+                         'Benefits Plan': 8, 'Employment Type': 3, '% Over Base Pay': 90, 
+                         'Job Class Title': 1692, 'Pay Grade': 56, 'MOU Title': 370, 'MOU': 90, 
+                         'Department Title': 88, 'Projected Annual Salary': 2
+                         }
+}

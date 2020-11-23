@@ -1,0 +1,24 @@
+{
+    "dataset_name": "adult",
+    
+    "raw_columns": ['age', 'workclass', 'fnlwgt', 'education', 'education-num',
+                   'marital-status', 'occupation', 'relationship', 'race', 'sex',
+                   'capital-gain', 'capital-loss', 'hours-per-week', 'native-country',
+                   'income'],
+                   
+    "identifiers": [],
+    
+    "cleaned_columns": ['age', 'fnlwgt', 'education-num', 'capital-gain', 'capital-loss',
+                       'hours-per-week', 'occupation', 'marital-status', 'sex', 'relationship',
+                       'race', 'education', 'native-country', 'workclass', 'income'],
+                       
+    "target_column": 'income',
+    "target_variable_type": 'cat',
+    "num_real": 6,
+    "num_cat": 8,
+    "number_of_tokes": {
+                        "sex": 2, "workclass": 8, "relationship": 6, "education": 16, 
+                        "occupation": 14, "native-country": 41, "marital-status": 7, 
+                        "race": 5, "income": 2
+                        }
+}
